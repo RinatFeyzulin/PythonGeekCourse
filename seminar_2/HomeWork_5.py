@@ -15,7 +15,7 @@ listA.reverse()
 print(listA)
 
 
-
+## с использование библиотеки random без метода shuffle
 listB = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 n=len(listB)-1
 for i in range(n):
@@ -23,11 +23,16 @@ for i in range(n):
     listB[i],listB[x] = listB[x], listB[i]
 print(listB)
 
+
+
+## без использования библиотеки random
 listC = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 n=len(listB)-1
 x = 1
 for i in range(n):
-    if(i>n-3):x = 2 
+    if(i>n-2):
+        x = 2 
     listC[i],listC[x] = listC[x], listC[i]
+    listC.reverse()
     x+=1
 print(listC)
