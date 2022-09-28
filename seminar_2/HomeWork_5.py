@@ -22,3 +22,12 @@ for i in range(n):
     x = randint(0,n)
     listB[i],listB[x] = listB[x], listB[i]
 print(listB)
+
+listC = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+n=len(listB)-1
+x = 1
+for i in range(n):
+    if(i>n-3):x = 2 
+    listC[i],listC[x] = listC[x], listC[i]
+    x+=1
+print(listC)
