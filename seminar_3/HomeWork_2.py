@@ -6,13 +6,15 @@ def list_product(myList):
     new_list = []
     pos=0
     neg=-1
-    lenList = len(myList)
+    lenList = int(len(myList)/2)
     
-    while pos<lenList/2:
+    while pos<lenList:
         new_list.append(myList[pos]*myList[neg])
         pos+=1
         neg-=1
+    if len(myList)%2!=0:
+         new_list.append(myList[int(lenList)])
 
     print(new_list)
 
-list_product([5,2,1,5,10])
+list_product([5, 2, 1, 5, 10, 11,10,11,12])
