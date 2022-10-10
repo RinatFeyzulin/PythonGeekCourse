@@ -53,4 +53,4 @@ def poly_sum(name_1: str, name_2: str):
 
 
 # poly_sum(input("Enter the file name 'text_1.txt': "), input("Enter the file name 'text_2.txt': "))
-poly_sum("poly.txt", "poly_2.txt")
+poly_sum("poly.txt", "poly2.txt")
