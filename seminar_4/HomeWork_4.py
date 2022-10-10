@@ -25,7 +25,7 @@ def mnogochlen(n):
         res+=r3+' = 0'
         list_mnogochlen.append(res)
         print(res)
-    print(list_mnogochlen)
+    print(f'{list_mnogochlen}\n')
     return list_mnogochlen
 
 def record_in_file_poly(lisT):
@@ -34,7 +34,7 @@ def record_in_file_poly(lisT):
             data.write(f'{lisT[i]}\n')
 
 def record_in_file_poly2(lisT):
-    with open('poly2.txt','a') as data:
+    with open('poly_2.txt','a') as data:
         for i in range(len(lisT)):
             data.write(f'{lisT[i]}\n')
 
