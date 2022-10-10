@@ -34,7 +34,7 @@ def record_in_file_poly(lisT):
             data.write(f'{lisT[i]}\n')
 
 def record_in_file_poly2(lisT):
-    with open('poly_2.txt','a') as data:
+    with open('poly2.txt','a') as data:
         for i in range(len(lisT)):
             data.write(f'{lisT[i]}\n')
 
