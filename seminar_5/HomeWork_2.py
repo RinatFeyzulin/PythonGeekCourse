@@ -36,7 +36,7 @@ def rle_decode(code):
     return(result)
 
 def save_encode(file_txt,file_code):
-    if exists(file_txt) and exists(file_code): 
+    if exists(file_txt) and not exists(file_code): 
         with open(file_txt, 'r') as data, \
                 open(file_code, 'w') as encode:
             codetxt=rle_encode(data.readlines())
